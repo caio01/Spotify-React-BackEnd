@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Spotify Playlist",
+    "playlists": "Daily Mix 1,Daily Mix 2,Daily Mix 5,Daily Mix 3,Daily Mix 4"
+  },
+  {
+    "id": 2,
+    "name": "Playlist Recomendadas",
+    "playlists": "MPB,Mint,Liu,Maroon 5,Charly Bell"
+  },
+  {
+    "id": 3,
+    "name": "O que seus amigos estao ouvindo",
+    "playlists": "Ruv Radio,Online Juice,Idles,Post Malone,Lomepal"
+  },
+  {
+    "id": 4,
+    "name": "Musica Brasileira",
+    "playlists": "Axe,Pagode 1,Pop,MPB,Sertanejo"
+  },
+  {
+    "id": 5,
+    "name": "Tocados recentemente",
+    "playlists": "Rock,Lomepal,Rebelution,Sertanejo,Reggae"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 33,
+    "name": "Caio",
+    "email": "caio@gmail.com",
+    "password": "U2FsdGVkX1+FXOZksfxuR8QtF/dGs30f1HUpyM1JqWw=",
+    "dateBirth": "01/01/1991",
+    "gender": "M",
+    "playlists": "Caio's Playlist #1"
+  },
+  {
+    "id": 67,
+    "name": "Test User",
+    "email": "test@t.com",
+    "password": "U2FsdGVkX19w0Zn+APNXqR5YKQHxhu7E0yGiya23a2g=",
+    "dateBirth": "01/01/1990",
+    "gender": "N",
+    "playlists": ""
+  },
+  {
+    "id": 68,
+    "name": "Jose",
+    "email": "jose@a.com",
+    "password": "U2FsdGVkX19GeIn0iT1vdoXtruFkvtWARZ4l+XBrKT0=",
+    "dateBirth": "05/01/2000",
+    "gender": "M",
+    "playlists": "Jose's Playlist #1"
+  },
+  {
+    "id": 73,
+    "name": "Juvencio",
+    "email": "juvencio@gmail.com",
+    "password": "U2FsdGVkX1/sjLjdzJAjtf5jgat+dy25EjRBvL+cpKk=",
+    "dateBirth": "01/01/1991",
+    "gender": "M",
+    "playlists": "Playlist 1"
+  },
+  {
+    "id": 204,
+    "name": "Test User3",
+    "email": "test2@t.com",
+    "password": "U2FsdGVkX19w0Zn+APNXqR5YKQHxhu7E0yGiya23a2g=",
+    "dateBirth": "01/01/1991",
+    "gender": "M",
+    "playlists": ""
+  },
+  {
+    "id": 205,
+    "name": "Test User3",
+    "email": "test2@t.com",
+    "password": "U2FsdGVkX19w0Zn+APNXqR5YKQHxhu7E0yGiya23a2g=",
+    "dateBirth": "01/01/1991",
+    "gender": "M",
+    "playlists": ""
+  },
+  {
+    "id": 206,
+    "name": "Test User3",
+    "email": "test2@t.com",
+    "password": "U2FsdGVkX19w0Zn+APNXqR5YKQHxhu7E0yGiya23a2g=",
+    "dateBirth": "01/01/1991",
+    "gender": "M",
+    "playlists": ""
+  }
+]

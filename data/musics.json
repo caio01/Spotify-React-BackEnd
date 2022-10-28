@@ -1,0 +1,1418 @@
+[
+  {
+    "id": 1,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Sertanejo,Daily Mix 1,Jose's Playlist #1,Caio's Playlist #1,Playlist 1"
+  },
+  {
+    "id": 2,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Reggae,Daily Mix 1,Jose's Playlist #1,Caio's Playlist #1,Playlist 1"
+  },
+  {
+    "id": 3,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Daily Mix 1,Jose's Playlist #1,Caio's Playlist #1,Playlist 1"
+  },
+  {
+    "id": 4,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Daily Mix 1,Caio's Playlist #1"
+  },
+  {
+    "id": 5,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Reggae,Daily Mix 1,Caio's Playlist #1"
+  },
+  {
+    "id": 6,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Daily Mix 1"
+  },
+  {
+    "id": 7,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Rock 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Daily Mix 1"
+  },
+  {
+    "id": 10,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Axe 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Axe,Daily Mix 2"
+  },
+  {
+    "id": 11,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Axe 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Axe,Daily Mix 2"
+  },
+  {
+    "id": 12,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Axe 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Axe,Daily Mix 2"
+  },
+  {
+    "id": 13,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Axe 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Axe,Daily Mix 2"
+  },
+  {
+    "id": 14,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Axe 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Axe,Daily Mix 2"
+  },
+  {
+    "id": 15,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Axe 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Axe,Daily Mix 2"
+  },
+  {
+    "id": 17,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pagode 1,Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 18,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pagode 1,Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 19,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pagode 1,Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 20,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pagode 1,Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 21,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pagode 1,Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 22,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 23,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pagode 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Daily Mix 5,Daily Mix 3"
+  },
+  {
+    "id": 25,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 26,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 27,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 28,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 29,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 30,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 31,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pop 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Pop,Daily Mix 4"
+  },
+  {
+    "id": 33,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 34,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 35,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 36,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 37,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 38,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 39,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "MPB 1",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "MPB"
+  },
+  {
+    "id": 41,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 42,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 43,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 44,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 45,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 46,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 47,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Rock 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Mint"
+  },
+  {
+    "id": 49,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu"
+  },
+  {
+    "id": 50,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu,Reggae"
+  },
+  {
+    "id": 51,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu"
+  },
+  {
+    "id": 52,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu"
+  },
+  {
+    "id": 53,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu"
+  },
+  {
+    "id": 54,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu"
+  },
+  {
+    "id": 55,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Axe 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Liu"
+  },
+  {
+    "id": 57,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 58,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 59,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 60,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 61,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 62,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 63,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pagode 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Maroon 5"
+  },
+  {
+    "id": 65,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 66,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 67,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 68,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 69,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 70,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 71,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pop 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Charly Bell"
+  },
+  {
+    "id": 73,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 74,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 75,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 76,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 77,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 78,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 79,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "MPB 2",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 81,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 82,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 83,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 84,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 85,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 86,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 87,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Rock 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Ruv Radio"
+  },
+  {
+    "id": 89,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Online Juice"
+  },
+  {
+    "id": 90,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Online Juice"
+  },
+  {
+    "id": 91,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Online Juice"
+  },
+  {
+    "id": 92,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Online Juice"
+  },
+  {
+    "id": 93,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Online Juice"
+  },
+  {
+    "id": 94,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Online Juice"
+  },
+  {
+    "id": 95,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Axe 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 97,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 98,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 99,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 100,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 101,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 102,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 103,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pagode 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Idles"
+  },
+  {
+    "id": 105,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 106,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 107,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 108,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 109,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 110,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 111,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pop 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Post Malone"
+  },
+  {
+    "id": 113,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 114,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 115,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 116,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 117,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 118,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 119,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "MPB 3",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Lomepal"
+  },
+  {
+    "id": 121,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 122,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 123,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 124,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 125,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 126,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 127,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Rock 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 129,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 130,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 131,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 132,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 133,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 134,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 135,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Axe 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 137,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 138,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 139,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 140,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 141,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 142,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 143,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pagode 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 145,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 146,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 147,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 148,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 149,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 150,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 151,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pop 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 153,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 154,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 155,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 156,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 157,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 158,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 159,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "MPB 4",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 161,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 162,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 163,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 164,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 165,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 166,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 167,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Rock 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 169,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution"
+  },
+  {
+    "id": 170,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution"
+  },
+  {
+    "id": 171,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution,Reggae"
+  },
+  {
+    "id": 172,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution"
+  },
+  {
+    "id": 173,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution"
+  },
+  {
+    "id": 174,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution"
+  },
+  {
+    "id": 175,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Axe 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rebelution"
+  },
+  {
+    "id": 177,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 178,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 179,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 180,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 181,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 182,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 183,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pagode 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 185,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 186,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 187,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 188,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 189,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 190,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 191,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "Pop 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 193,
+    "musicname": "Music 1",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 194,
+    "musicname": "Music 2",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 195,
+    "musicname": "Music 3",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 196,
+    "musicname": "Music 4",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 197,
+    "musicname": "Music 5",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 198,
+    "musicname": "Music 6",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 199,
+    "musicname": "Music 7",
+    "author": "Author A",
+    "album": "MPB 5",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": ""
+  },
+  {
+    "id": 201,
+    "musicname": "Music 10",
+    "author": "Author Caio",
+    "album": "Album 50",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Sertanejo"
+  },
+  {
+    "id": 202,
+    "musicname": "Music 11",
+    "author": "Author Caio",
+    "album": "Album 50",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+    "playlists": "Sertanejo"
+  },
+  {
+    "id": 211,
+    "musicname": "Test",
+    "author": "Caio",
+    "album": "album test",
+    "src": "./../../assets/audio/music.mp3",
+    "playlists": "Rock,Reggae"
+  }
+]

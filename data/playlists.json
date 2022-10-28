@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "Rock",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://i.scdn.co/image/ab67706f000000033c52ff5ce471594a9d6b848e",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7,Test",
+    "collections": "Tocados recentemente",
+    "users": ""
+  },
+  {
+    "id": 2,
+    "name": "Axe",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://i.scdn.co/image/ab67706f0000000304a6469aae82976ca102dcb4",
+    "musics": "Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Musica Brasileira",
+    "users": ""
+  },
+  {
+    "id": 3,
+    "name": "Pagode 1",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://pbs.twimg.com/media/DDmRwIlWsAkBO0W.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5",
+    "collections": "Musica Brasileira",
+    "users": ""
+  },
+  {
+    "id": 4,
+    "name": "Pop",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://i.scdn.co/image/ab67706f00000003d8719001db822961551b017c",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Musica Brasileira",
+    "users": ""
+  },
+  {
+    "id": 5,
+    "name": "MPB",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://i.scdn.co/image/ab67706c0000bebb9e69c30fcc12d53d20d42ffe",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Playlist Recomendadas,Musica Brasileira",
+    "users": ""
+  },
+  {
+    "id": 6,
+    "name": "Mint",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://i.scdn.co/image/ab67706f000000036915ccc11ba5d6b137bbd64a",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Playlist Recomendadas",
+    "users": ""
+  },
+  {
+    "id": 7,
+    "name": "Liu",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO278IP6-large.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Playlist Recomendadas",
+    "users": ""
+  },
+  {
+    "id": 8,
+    "name": "Maroon 5",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://cdn.peoople.app/image/recommendation/3580314/3580314_010720113752_opt_520.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Playlist Recomendadas",
+    "users": ""
+  },
+  {
+    "id": 9,
+    "name": "Charly Bell",
+    "desc": "Escute Charly Bell",
+    "cover": "https://seeded-session-images.scdn.co/v1/img/artist/6G0U6yQQHng0rMEpk5wMKd/en",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Playlist Recomendadas",
+    "users": ""
+  },
+  {
+    "id": 11,
+    "name": "Ruv Radio",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://seeded-session-images.scdn.co/v1/img/artist/4Y5Jv8Qh2dDszWgmHZGHQ0/en",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "O que seus amigos estao ouvindo",
+    "users": ""
+  },
+  {
+    "id": 12,
+    "name": "Online Juice",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://i.scdn.co/image/ab67706f00000003c85b59758abc0104b21001fc",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6",
+    "collections": "O que seus amigos estao ouvindo",
+    "users": ""
+  },
+  {
+    "id": 13,
+    "name": "Idles",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4bTqdb-large.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "O que seus amigos estao ouvindo",
+    "users": ""
+  },
+  {
+    "id": 14,
+    "name": "Post Malone",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1aBeik-large.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "O que seus amigos estao ouvindo",
+    "users": ""
+  },
+  {
+    "id": 15,
+    "name": "Lomepal",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://seeded-session-images.scdn.co/v1/img/artist/1Yfe3ONJlioHys7jwHdfVm/en",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "O que seus amigos estao ouvindo,Tocados recentemente",
+    "users": ""
+  },
+  {
+    "id": 22,
+    "name": "Rebelution",
+    "desc": "Lorem ipsum dolor",
+    "cover": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1He03C-large.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Tocados recentemente",
+    "users": ""
+  },
+  {
+    "id": 26,
+    "name": "Sertanejo",
+    "desc": "Playlist Sertanejo",
+    "cover": "https://i.scdn.co/image/ab67706c0000bebb9363709da98d0cfbe0b857f8",
+    "musics": "Music 1,Music 10,Music 11",
+    "collections": "Musica Brasileira,Tocados recentemente",
+    "users": ""
+  },
+  {
+    "id": 30,
+    "name": "Reggae",
+    "desc": "Reggae Classics",
+    "cover": "https://i.scdn.co/image/ab67706f000000037dd1fab3cfd4e3bdb832ff72",
+    "musics": "Music 2,Music 5,Music 2,Music 3,Test",
+    "collections": "Tocados recentemente",
+    "users": ""
+  },
+  {
+    "id": 31,
+    "name": "Daily Mix 1",
+    "desc": "",
+    "cover": "https://dailymix-images.scdn.co/v2/img/ca8a27be0f106897dbade3c7adbec4a3a9d10caa/1/en/large",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Spotify Playlist",
+    "users": ""
+  },
+  {
+    "id": 32,
+    "name": "Daily Mix 2",
+    "desc": "",
+    "cover": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb727a2ac15afe659be999beba/2/en/large",
+    "musics": "Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Spotify Playlist",
+    "users": ""
+  },
+  {
+    "id": 33,
+    "name": "Daily Mix 5",
+    "desc": "",
+    "cover": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebef856ed9b2077fa52cd9fa52/5/en/large",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Spotify Playlist",
+    "users": ""
+  },
+  {
+    "id": 34,
+    "name": "Daily Mix 3",
+    "desc": "",
+    "cover": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba00b11c129b27a88fc72f36b/3/en/large",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Spotify Playlist",
+    "users": ""
+  },
+  {
+    "id": 35,
+    "name": "Daily Mix 4",
+    "desc": "",
+    "cover": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb178a83212c7e82d1389cb76a/4/en/large",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5,Music 6,Music 7",
+    "collections": "Spotify Playlist",
+    "users": ""
+  },
+  {
+    "id": 55,
+    "name": "Jose's Playlist #1",
+    "desc": "Description of Play",
+    "cover": "https://i.pinimg.com/236x/90/68/05/906805b74d1ca2b5deb1ed561404634d--good-vibes-trippy.jpg",
+    "musics": "Music 1,Music 2,Music 3",
+    "collections": "",
+    "users": "Jose"
+  },
+  {
+    "id": 57,
+    "name": "Caio's Playlist #1",
+    "desc": "Description Playlist",
+    "cover": "https://pbs.twimg.com/media/DZAqPuFW4AAyQKG.jpg",
+    "musics": "Music 1,Music 2,Music 3,Music 4,Music 5",
+    "collections": "",
+    "users": "Caio"
+  },
+  {
+    "id": 62,
+    "name": "Playlist 1",
+    "desc": "Playlist do Juvencio",
+    "cover": "https://i.pinimg.com/236x/90/68/05/906805b74d1ca2b5deb1ed561404634d--good-vibes-trippy.jpg",
+    "musics": "Music 1,Music 2,Music 3",
+    "collections": "",
+    "users": "Juvencio"
+  }
+]
