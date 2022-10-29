@@ -63,6 +63,17 @@ exports.put = (req, res, next) => {
 }
 
 exports.delete = (req, res, next) => {
-    let id = req.params.id
-    res.status(200).send(`Requisição recebida com sucesso! DELETE id:${id}`)
+    if (users.filter(user => user.id == req.params.id) == 0){
+        res.status(400).send('Id not exists')
+    } else {
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].id == req.params.id) {
+                delete users[i]
+                break
+            }
+        }
+        //fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
+        //res.status(201).send("User altered successfully")
+        res.status(201).send(users)
+    }
 }
