@@ -19,11 +19,11 @@ exports.post = (req, res, next) => {
         res.status(400).send('Id already exists')
     } else {
         var id = collections[collections.length - 1].id + 1
-        var collection = collections[collections.length - 1]
-        collection.id = id
-        collection.name = req.body.name
-        collection.playlists = req.body.playlists
-        collections.push(collection)
+        collections.push({
+            id : id,
+            name : req.body.name,
+            playlists : req.body.playlists
+        })
         fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
         res.status(201).send("Collection registered successfully")
     }

@@ -23,14 +23,15 @@ exports.post = (req, res, next) => {
     } else {
         var id = users[users.length - 1].id + 1
         var user = users[users.length - 1]
-        user.id = id
-        user.name = req.body.name
-        user.email = req.body.email
-        user.password = req.body.password
-        user.dateBirth = req.body.dateBirth
-        user.gender = req.body.gender
-        user.playlists = req.body.playlists
-        users.push(user)
+        users.push({
+            id : id,
+            name : req.body.name,
+            email : req.body.email,
+            password : req.body.password,
+            dateBirth : req.body.dateBirth,
+            gender : req.body.gender,
+            playlists : req.body.playlists
+        })
         fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
         res.status(201).send("User registered successfully")
     }
