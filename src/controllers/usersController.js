@@ -68,12 +68,11 @@ exports.delete = (req, res, next) => {
     } else {
         for (var i = 0; i < users.length; i++) {
             if (users[i].id == req.params.id) {
-                delete users[i]
+                users.splice(i, 1)
                 break
             }
         }
-        //fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
-        //res.status(201).send("User altered successfully")
-        res.status(201).send(users)
+        fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
+        res.status(201).send("User removed successfully")
     }
 }

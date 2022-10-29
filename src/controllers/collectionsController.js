@@ -15,7 +15,7 @@ exports.post = (req, res, next) => {
     if( body.id != undefined || typeof body.name != "string" || typeof body.playlists != "string")
     {
         res.status(400).send('Required is invalid')
-    } else if (collections.filter(collection => user.id == body.id) != 0){
+    } else if (collections.filter(collection => collection.id == body.id) != 0){
         res.status(400).send('Id already exists')
     } else {
         var id = collections[collections.length - 1].id + 1
@@ -25,7 +25,7 @@ exports.post = (req, res, next) => {
         collection.playlists = req.body.playlists
         collections.push(collection)
         fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
-        res.status(201).send("User registered successfully")
+        res.status(201).send("Collection registered successfully")
     }
 }
 
@@ -45,7 +45,7 @@ exports.put = (req, res, next) => {
             }
         }
         fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
-        res.status(201).send("User altered successfully")
+        res.status(201).send("Collection altered successfully")
     }
 }
 
@@ -55,13 +55,11 @@ exports.delete = (req, res, next) => {
     } else {
         for (var i = 0; i < collections.length; i++) {
             if (collections[i].id == req.params.id) {
-                delete collections[i]
+                collections.splice(i, 1)
                 break
             }
         }
-        //fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
-        //res.status(201).send("User altered successfully")
-        res.status(201).send(collections)
+        fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
+        res.status(201).send("Collection removed successfully")
     }
-    res.status(200).send(`Requisição recebida com sucesso! DELETE id:${id}`)
 }
