@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 
 //Rotas
@@ -10,6 +11,7 @@ const musicsRoute = require('./routes/musicsRoute')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 
 app.use('/', index)
 app.use('/users', usersRoute)
