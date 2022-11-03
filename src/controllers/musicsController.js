@@ -3,8 +3,16 @@ const filePath = "./data/musics.json"
 let musics = JSON.parse(fs.readFileSync(filePath, 'utf8'))
 
 
-exports.get = (req, res, next) => { 
-    res.status(200).send(musics)
+exports.get = (req, res, next) => {
+    try {
+        res.status(200).send(musics.filter(m => 
+            m.musicname.toLowerCase().includes(req.query.search.toLowerCase())||
+            m.author.toLowerCase().includes(req.query.search.toLowerCase())||
+            m.album.toLowerCase().includes(req.query.search.toLowerCase())
+            ))
+    } catch {
+        res.status(200).send(musics)
+    }
 }
 
 exports.getById = (req, res, next) => {
