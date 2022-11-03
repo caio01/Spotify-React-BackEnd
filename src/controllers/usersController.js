@@ -77,3 +77,16 @@ exports.delete = (req, res, next) => {
         res.status(201).send("User removed successfully")
     }
 }
+
+exports.login = (req, res, next) => {
+    const body = req.body
+    if (users.filter(user => user.email == body.email) == 0){
+        res.status(400).send('User not exists')
+    } else {
+        if(users.filter(user => user.email == body.email)[0].password == body.password) {
+            res.status(200).send("Login successfully")
+        } else {
+            res.status(400).send("Incorrect password")
+        }
+    }
+}
