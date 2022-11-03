@@ -18,11 +18,8 @@ exports.post = (req, res, next) => {
         typeof body.gender != "string" || typeof body.playlists != "string")
     {
         res.status(400).send('Required is invalid')
-    } else if (users.filter(user => user.id == body.id) != 0){
-        res.status(400).send('Id already exists')
     } else {
         var id = users[users.length - 1].id + 1
-        var user = users[users.length - 1]
         users.push({
             id : id,
             name : req.body.name,
