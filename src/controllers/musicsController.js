@@ -12,6 +12,10 @@ exports.get = async (req, res) => {
 exports.getById = async (req, res) => {
     try {
         const music = await Music.findOne({ _id: req.params.id })
+        if(music === null) {
+            res.status(422).send("Id is invalid")
+            return
+        }
         res.status(200).send(music)
     } catch (error) {
         res.status(500).json({ERROR: error})
@@ -52,7 +56,11 @@ exports.put = async (req, res) => {
     }
 
     try {
-        await Music.findOne({ _id: req.params.id})
+        const updatedMusic = await Music.findOne({ _id: req.params.id})
+        if(updatedMusic.n === 0) {
+            res.status(422).send('Id is invalid')
+            return
+        }
     } catch (error) {
         res.status(422).send('Id is invalid')
     }

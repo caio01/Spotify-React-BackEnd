@@ -5,16 +5,20 @@ exports.get = async (req, res) => {
         const users = await User.find()
         res.status(200).send(users)
     } catch (error) {
-        res.status(500).json({ERROR: error})
+        res.status(500).json({ERROR: error.message})
     }
 }
 
 exports.getById = async (req, res) => {
     try {
         const user = await User.findOne({ _id: req.params.id })
+        if(user === null) {
+            res.status(422).send("Id is invalid")
+            return
+        }
         res.status(200).send(user)
     } catch (error) {
-        res.status(500).json({ERROR: error})
+        res.status(500).json({ERROR: error.message})
     }
 }
 
@@ -38,7 +42,7 @@ exports.post = async (req, res) => {
         await User.create(user)
         res.status(201).send("User registered successfully")
     } catch (error) {
-        res.status(500).json({ERROR: error})
+        res.status(500).json({ERROR: error.message})
     }
 }
 
@@ -53,22 +57,20 @@ exports.put = async (req, res) => {
         playlists
     }
 
-    try {
-        await User.findOne({ _id: req.params.id})
-    } catch (error) {
-        res.status(422).send('Id is invalid')
-    }
-
     if( typeof name != "string" || typeof email != "string" || typeof password != "string" || typeof gender != "string" ) {
         res.status(422).send('Required is invalid')
         return
     }
 
     try {
-        await User.updateOne({ _id: req.params.id }, user)
+        const updatedUser = await User.updateOne({ _id: req.params.id }, user)
+        if(updatedUser.n === 0) {
+            res.status(422).send('Id is invalid')
+            return
+        }
         res.status(201).send("User updated successfully")
     } catch (error) {
-        res.status(500).json({ERROR: error})
+        res.status(500).json({ERROR: error.message})
     }
 }
 
@@ -77,6 +79,6 @@ exports.delete = async (req, res) => {
         await User.deleteOne({ _id: req.params.id })
         res.status(201).send("User deleted successfully")
     } catch (error) {
-        res.status(500).json({ERROR: error})
+        res.status(500).json({ERROR: error.message})
     }
 }

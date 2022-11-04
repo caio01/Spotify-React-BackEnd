@@ -12,6 +12,10 @@ exports.get = async (req, res) => {
 exports.getById = async (req, res) => {
     try {
         const collection = await Collection.findOne({ _id: req.params.id })
+        if(collection === null) {
+            res.status(422).send("Id is invalid")
+            return
+        }
         res.status(200).send(collection)
     } catch (error) {
         res.status(500).json({ERROR: error})
@@ -46,7 +50,11 @@ exports.put = async (req, res) => {
     }
 
     try {
-        await Collection.findOne({ _id: req.params.id})
+        const updatedCollection = await Collection.findOne({ _id: req.params.id})
+        if(updatedCollection.n === 0) {
+            res.status(422).send('Id is invalid')
+            return
+        }
     } catch (error) {
         res.status(422).send('Id is invalid')
     }
