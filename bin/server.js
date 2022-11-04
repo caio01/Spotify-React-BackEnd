@@ -1,7 +1,7 @@
 const app = require('../src/app')
 const mongoose = require('mongoose')
 
-const port = normalizaPort(process.env.PORT || '3000');
+const port = normalizaPort(process.env.PORT || '3333');
 
 function normalizaPort(val) {
     const port = parseInt(val, 10);
