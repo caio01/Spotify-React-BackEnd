@@ -1,89 +1,82 @@
-let fs = require('fs')
-const filePath = "./data/users.json"
-let users = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+const User = require('./../../models/User')
 
-
-exports.get = (req, res, next) => { 
-    res.status(200).send(users)
+exports.get = async (req, res) => { 
+    try {
+        const users = await User.find()
+        res.status(200).send(users)
+    } catch (error) {
+        res.status(500).json({ERROR: error})
+    }
 }
 
-exports.getById = (req, res, next) => {
-    res.status(200).send(users.filter(user => user.id == req.params.id))
+exports.getById = async (req, res) => {
+    try {
+        const user = await User.findOne({ _id: req.params.id })
+        res.status(200).send(user)
+    } catch (error) {
+        res.status(500).json({ERROR: error})
+    }
 }
 
-exports.post = (req, res, next) => {
-    const body = req.body
-    if( body.id != undefined || typeof body.name != "string" || typeof body.email != "string" ||
-        typeof body.password != "string" || typeof body.dateBirth != "string" ||
-        typeof body.gender != "string" || typeof body.playlists != "string")
-    {
-        res.status(400).send('Required is invalid')
-    } else {
-        var id = users[users.length - 1].id + 1
-        users.push({
-            id : id,
-            name : req.body.name,
-            email : req.body.email,
-            password : req.body.password,
-            dateBirth : req.body.dateBirth,
-            gender : req.body.gender,
-            playlists : req.body.playlists
-        })
-        fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
+exports.post = async (req, res) => {
+    const {name, email, password, datebirth, gender, playlists} = req.body
+    const user = {
+        name,
+        email,
+        password,
+        datebirth,
+        gender,
+        playlists
+    }
+
+    if( typeof name != "string" || typeof email != "string" || typeof password != "string" || typeof gender != "string" ) {
+        res.status(422).send('Required is invalid')
+        return
+    }
+
+    try {
+        await User.create(user)
         res.status(201).send("User registered successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
 
-exports.put = (req, res, next) => {
-    const body = req.body
-    if( body.id != undefined || typeof body.name != "string" || typeof body.email != "string" ||
-        typeof body.password != "string" || typeof body.dateBirth != "string" ||
-        typeof body.gender != "string" || typeof body.playlists != "string")
-    {
-        res.status(400).send('Required is invalid')
-    } else if (users.filter(user => user.id == req.params.id) == 0){
-        res.status(400).send('Id not exists')
-    } else {
-        for (var i = 0; i < users.length; i++) {
-            if (users[i].id == req.params.id) {
-                users[i].name = req.body.name
-                users[i].email = req.body.email
-                users[i].password = req.body.password
-                users[i].dateBirth = req.body.dateBirth
-                users[i].gender = req.body.gender
-                users[i].playlists = req.body.playlists
-                break
-            }
-        }
-        fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
-        res.status(201).send("User altered successfully")
+exports.put = async (req, res) => {
+    const {name, email, password, datebirth, gender, playlists} = req.body
+    const user = {
+        name,
+        email,
+        password,
+        datebirth,
+        gender,
+        playlists
+    }
+
+    try {
+        await User.findOne({ _id: req.params.id})
+    } catch (error) {
+        res.status(422).send('Id is invalid')
+    }
+
+    if( typeof name != "string" || typeof email != "string" || typeof password != "string" || typeof gender != "string" ) {
+        res.status(422).send('Required is invalid')
+        return
+    }
+
+    try {
+        await User.updateOne({ _id: req.params.id }, user)
+        res.status(201).send("User updated successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
 
-exports.delete = (req, res, next) => {
-    if (users.filter(user => user.id == req.params.id) == 0){
-        res.status(400).send('Id not exists')
-    } else {
-        for (var i = 0; i < users.length; i++) {
-            if (users[i].id == req.params.id) {
-                users.splice(i, 1)
-                break
-            }
-        }
-        fs.writeFileSync(filePath, JSON.stringify(users, null, 2))
-        res.status(201).send("User removed successfully")
-    }
-}
-
-exports.login = (req, res, next) => {
-    const body = req.body
-    if (users.filter(user => user.email == body.email) == 0){
-        res.status(400).send('User not exists')
-    } else {
-        if(users.filter(user => user.email == body.email)[0].password == body.password) {
-            res.status(200).send("Login successfully")
-        } else {
-            res.status(400).send("Incorrect password")
-        }
+exports.delete = async (req, res) => {
+    try {
+        await User.deleteOne({ _id: req.params.id })
+        res.status(201).send("User deleted successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }

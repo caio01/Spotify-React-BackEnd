@@ -1,78 +1,82 @@
-let fs = require('fs')
-const filePath = "./data/playlists.json"
-let playlists = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+const Playlist = require('./../../models/Playlist')
 
-
-exports.get = (req, res, next) => { 
-    res.status(200).send(playlists)
-}
-
-exports.getById = (req, res, next) => {
-    res.status(200).send(playlists.filter(playlist => playlist.id == req.params.id))
-}
-
-exports.post = (req, res, next) => {
-    const body = req.body
-    if( body.id != undefined || typeof body.name != "string" || typeof body.desc != "string" ||
-        typeof body.cover != "string" || typeof body.musics != "string" ||
-        typeof body.collections != "string" || typeof body.users != "string")
-    {
-        res.status(400).send('Required is invalid')
-    } else if (playlists.filter(playlist => playlist.id == body.id) != 0) {
-        res.status(400).send('Id already exists')
-    } else {
-        var id = playlists[playlists.length - 1].id + 1
-        playlists.push({
-            id : id,
-            name : req.body.name,
-            desc : req.body.desc,
-            cover : req.body.cover,
-            musics : req.body.musics,
-            collections : req.body.collections,
-            users : req.body.users
-        })
-        fs.writeFileSync(filePath, JSON.stringify(playlists, null, 2))
-        res.status(201).send("User registered successfully")
+exports.get = async (req, res) => { 
+    try {
+        const playlists = await Playlist.find()
+        res.status(200).send(playlists)
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
 
-exports.put = (req, res, next) => {
-    const body = req.body
-    if( body.id != undefined || typeof body.name != "string" || typeof body.desc != "string" ||
-        typeof body.cover != "string" || typeof body.musics != "string" ||
-        typeof body.collections != "string" || typeof body.users != "string")
-    {
-        res.status(400).send('Required is invalid')
-    } else if (playlists.filter(playlist => playlist.id == body.id) != 0) {
-        res.status(400).send('Id not exists')
-    } else {
-        for (var i = 0; i < playlists.length; i++) {
-            if (playlists[i].id == req.params.id) {
-                playlists[i].name = req.body.name
-                playlists[i].desc = req.body.desc
-                playlists[i].cover = req.body.cover
-                playlists[i].musics = req.body.musics
-                playlists[i].collections = req.body.collections
-                playlists[i].users = req.body.users
-                break
-            }
-        }
-        fs.writeFileSync(filePath, JSON.stringify(playlists, null, 2))
-        res.status(201).send("Playlist altered successfully")
+exports.getById = async (req, res) => {
+    try {
+        const playlist = await Playlist.findOne({ _id: req.params.id })
+        res.status(200).send(playlist)
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
 
-exports.delete = (req, res, next) => {
-    if (playlists.filter(playlist => playlist.id == req.params.id) == 0){
-        res.status(400).send('Id not exists')
-    } else {
-        for (var i = 0; i < playlists.length; i++) {
-            if (playlists[i].id == req.params.id) {
-                playlists.splice(i, 1)
-                break
-            }
-        }
-        fs.writeFileSync(filePath, JSON.stringify(playlists, null, 2))
-        res.status(201).send("Playlist removed successfully")
+exports.post = async (req, res) => {
+    const {name, desc, cover, musics, collections, users} = req.body
+    const playlist = {
+        name,
+        desc,
+        cover,
+        musics,
+        collections,
+        users
+    }
+
+    if( typeof name != "string" || typeof desc != "string" || typeof cover != "string") {
+        res.status(422).send('Required is invalid')
+        return
+    }
+
+    try {
+        await Playlist.create(playlist)
+        res.status(201).send("Playlist registered successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
+    }
+}
+
+exports.put = async (req, res) => {
+    const {name, desc, cover, musics, collections, users} = req.body
+    const playlist = {
+        name,
+        desc,
+        cover,
+        musics,
+        collections,
+        users
+    }
+
+    try {
+        await Playlist.findOne({ _id: req.params.id})
+    } catch (error) {
+        res.status(422).send('Id is invalid')
+    }
+    
+    if( typeof name != "string" || typeof desc != "string" || typeof cover != "string") {
+        res.status(422).send('Required is invalid')
+        return
+    }
+
+    try {
+        await Playlist.updateOne({ _id: req.params.id }, playlist)
+        res.status(201).send("Playlist updated successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
+    }
+}
+
+exports.delete = async (req, res) => {
+    try {
+        await Playlist.deleteOne({ _id: req.params.id })
+        res.status(201).send("Playlist deleted successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }

@@ -1,65 +1,74 @@
-let fs = require('fs')
-const filePath = "./data/collections.json"
-let collections = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+const Collection = require('./../../models/Collection')
 
-exports.get = (req, res, next) => { 
-    res.status(200).send(collections)
+exports.get = async (req, res) => { 
+    try {
+        const collections = await Collection.find()
+        res.status(200).send(collections)
+    } catch (error) {
+        res.status(500).json({ERROR: error})
+    }
 }
 
-exports.getById = (req, res, next) => {
-    res.status(200).send(collections.filter(user => user.id == req.params.id))
+exports.getById = async (req, res) => {
+    try {
+        const collection = await Collection.findOne({ _id: req.params.id })
+        res.status(200).send(collection)
+    } catch (error) {
+        res.status(500).json({ERROR: error})
+    }
 }
 
-exports.post = (req, res, next) => {
-    const body = req.body
-    if( body.id != undefined || typeof body.name != "string" || typeof body.playlists != "string")
-    {
-        res.status(400).send('Required is invalid')
-    } else if (collections.filter(collection => collection.id == body.id) != 0){
-        res.status(400).send('Id already exists')
-    } else {
-        var id = collections[collections.length - 1].id + 1
-        collections.push({
-            id : id,
-            name : req.body.name,
-            playlists : req.body.playlists
-        })
-        fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
+exports.post = async (req, res) => {
+    const {name, playlists} = req.body
+    const collection = {
+        name,
+        playlists
+    }
+
+    if( typeof name != "string" || typeof playlists != "string") {
+        res.status(422).send('Required is invalid')
+        return
+    }
+
+    try {
+        await Collection.create(collection)
         res.status(201).send("Collection registered successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
 
-exports.put = (req, res, next) => {
-    const body = req.body
-    if( body.id != undefined || typeof body.name != "string" || typeof body.playlists != "string")
-    {
-        res.status(400).send('Required is invalid')
-    } else if (collections.filter(collection => collection.id == req.params.id) == 0){
-        res.status(400).send('Id not exists')
-    } else {
-        for (var i = 0; i < collections.length; i++) {
-            if (collections[i].id == req.params.id) {
-                collections[i].name = req.body.name
-                collections[i].playlists = req.body.playlists
-                break
-            }
-        }
-        fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
-        res.status(201).send("Collection altered successfully")
+exports.put = async (req, res) => {
+    const {name, playlists} = req.body
+    const collection = {
+        name,
+        playlists
+    }
+
+    try {
+        await Collection.findOne({ _id: req.params.id})
+    } catch (error) {
+        res.status(422).send('Id is invalid')
+    }
+    
+    if ( typeof name != "string" || typeof playlists != "string") {
+        res.status(422).send('Required is invalid')
+        return
+    }
+
+    try {
+        await Collection.updateOne({ _id: req.params.id }, collection)
+        res.status(201).send("Collection updated successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
 
-exports.delete = (req, res, next) => {
-    if (collections.filter(collection => collection.id == req.params.id) == 0){
-        res.status(400).send('Id not exists')
-    } else {
-        for (var i = 0; i < collections.length; i++) {
-            if (collections[i].id == req.params.id) {
-                collections.splice(i, 1)
-                break
-            }
-        }
-        fs.writeFileSync(filePath, JSON.stringify(collections, null, 2))
-        res.status(201).send("Collection removed successfully")
+exports.delete = async (req, res) => {
+    try {
+        await Collection.deleteOne({ _id: req.params.id })
+        res.status(201).send("Collection deleted successfully")
+    } catch (error) {
+        res.status(500).json({ERROR: error})
     }
 }
