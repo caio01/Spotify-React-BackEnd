@@ -3,11 +3,15 @@ const Music = require('./../../models/Music')
 exports.get = async (req, res) => { 
     try {
         const musics = await Music.find()
-        res.status(200).send(musics.filter(m => 
-            m.musicname.toLowerCase().includes(req.query.search.toLowerCase())||
-            m.author.toLowerCase().includes(req.query.search.toLowerCase())||
-            m.album.toLowerCase().includes(req.query.search.toLowerCase())
-            ))
+        if (req.query.search == undefined) {
+            res.status(200).send(musics)    
+        } else {
+            res.status(200).send(musics.filter(m => 
+                m.musicname.toLowerCase().includes(req.query.search.toLowerCase())||
+                m.author.toLowerCase().includes(req.query.search.toLowerCase())||
+                m.album.toLowerCase().includes(req.query.search.toLowerCase())
+                ))
+        }
     } catch (error) {
         res.status(500).json({ERROR: error})
     }
