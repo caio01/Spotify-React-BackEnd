@@ -86,7 +86,7 @@ exports.delete = async (req, res) => {
 
 exports.login = async (req, res) => {
     try {
-        const {email, password} = req.body
+        var {email, password} = req.body
         password = decrypt(password)
         const user = await User.findOne({ email: email })
 
