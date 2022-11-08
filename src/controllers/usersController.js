@@ -1,3 +1,4 @@
+var CryptoJS = require("crypto-js")
 const User = require('./../../models/User')
 
 exports.get = async (req, res) => { 
@@ -86,6 +87,7 @@ exports.delete = async (req, res) => {
 exports.login = async (req, res) => {
     try {
         const {email, password} = req.body
+        password = decrypt(password)
         const user = await User.findOne({ email: email })
 
         if(user === null) {
@@ -93,12 +95,27 @@ exports.login = async (req, res) => {
             return
         }
         
-        if(user.email == email && user.password == password) {
-            res.status(200).send("Login successfully")
+        if(user.email == email && decrypt(user.password) == password) {
+            res.status(200).send(user)
         } else {
             res.status(400).send("Incorrect password")
         }
     } catch (error) {
         res.status(500).json({ERROR: error.message})
     }
+}
+
+
+
+
+// Encrypt
+function encrypt(data) {
+    var ciphertext = CryptoJS.AES.encrypt(data, 'my-secret-key@123').toString()
+    return ciphertext
+}
+// Decrypt
+function decrypt(data) {
+    var bytes = CryptoJS.AES.decrypt(data, 'my-secret-key@123')
+    var decryptedData = bytes.toString(CryptoJS.enc.Utf8)
+    return decryptedData
 }
