@@ -14,7 +14,9 @@ Esse é um projeto acadêmico da disciplina de Desenvolvimento Web da Universida
 
 ## Rest API
 Esse projeto também pode ser utilizado como uma Rest API, para integração com outras soluções, uma vez que é dessa forma que se comunica com o FrontEnd da aplicação.
-Para quem desejar utilizá-lo com essa finalidade, abaixo segue uma breve documentação:
+Para quem desejar utilizá-lo com essa finalidade, abaixo segue uma breve documentação desenvolvida através do PostMan:
+
+- https://documenter.getpostman.com/view/21904809/2s8YzUyhAz
 
 # Tecnologias utilizadas
 ## Back end
